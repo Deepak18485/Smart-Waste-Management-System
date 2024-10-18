@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Waste Management System</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Login</a>
+        <a href="#">Chatbot</a>
+        <a href="#">Incentive Board</a>
+        <a href="#">Feedback</a>
+    </nav>
+
+    <h1>Welcome to the Smart Waste Management System</h1>
+    
+    <!-- Complaint Box -->
+    <div>
+        <h3>Complaint Box</h3>
+        <textarea id="complaintBox" rows="4" cols="50" placeholder="Write your complaint here..."></textarea>
+        <br><button onclick="submitComplaint()">Submit Complaint</button>
+    </div>
+
+    <!-- Location Sharing -->
+    <div>
+        <h3>Location Sharing</h3>
+        <button onclick="shareLocation()">Share My Location with Waste Collector</button>
+        <p id="locationStatus"></p>
+    </div>
+
+    <!-- Waste Collection Schedule Prediction -->
+    <div>
+        <h3>Waste Collection Schedule Prediction</h3>
+        <button onclick="getCollectionSchedule()">Get Next Collection Schedule</button>
+        <p id="scheduleStatus"></p>
+    </div>
+
+    <!-- Leaderboard -->
+    <div>
+        <h3>Citizen Engagement Leaderboard</h3>
+        <ul id="leaderboard"></ul>
+    </div>
+
+    <!-- Waste Segregation Assistance -->
+    <div>
+        <h3>AI-Powered Waste Segregation</h3>
+        <input type="file" id="wasteImage" accept="image/*" onchange="analyzeWasteImage()">
+        <p id="segregationResult"></p>
+    </div>
+
+    <!-- Environmental Impact Dashboard -->
+    <div>
+        <h3>Environmental Impact</h3>
+        <button onclick="showImpactDashboard()">Show My Environmental Impact</button>
+        <p id="impactDashboard"></p>
+    </div>
+
+    <!-- Waste Tracking System -->
+    <div>
+        <h3>Waste Tracking System</h3>
+        <button onclick="trackWaste()">Track Where My Waste Goes</button>
+        <p id="wasteTracking"></p>
+    </div>
+
+    <!-- Localized Announcements -->
+    <div>
+        <h3>Localized Announcements</h3>
+        <p id="announcement"></p>
+    </div>
+
+    <!-- Community-Based Disposal Points -->
+    <div>
+        <h3>Find Nearest Disposal Points</h3>
+        <button onclick="findNearestDisposal()">Show Nearest Disposal Points</button>
+        <p id="disposalPoints"></p>
+    </div>
+
+    <div id="notificationsArea">
+        <h3>Notification Status</h3>
+        <p id="notificationStatus"></p>
+    </div>
+    
+</body>
+</html>
